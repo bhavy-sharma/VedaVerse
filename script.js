@@ -52,3 +52,51 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+gsap.registerPlugin(ScrollTrigger);
+
+// Navbar animation
+gsap.from(".navbar", {
+    opacity: 0,
+    y: -20,
+    duration: 1,
+    ease: "power2.out",
+});
+
+    // team member animation
+gsap.from(".team-member", {
+    opacity: 0,        // Start with zero opacity
+    x: 100,            // Start 100 pixels to the right
+    duration: 1,       // Animation duration
+    stagger: 0.2,      // Stagger the animations
+    scrollTrigger: {
+        trigger: ".team-member", // Trigger animation when team members enter the viewport
+        start: "top 80%",        // Adjust this to control when the animation starts
+        toggleActions: "play none none none", // Control the play state of the animation
+    },
+});
+
+// Project card animation
+gsap.from(".project-card", {
+    opacity: 0,
+    scale: 0.9,
+    duration: 1,
+    stagger: 0.3,
+    scrollTrigger: {
+        trigger: ".project-card",
+        start: "top 80%",
+        toggleActions: "play none none none",
+    },
+});
+
+// Header animation
+gsap.from("h2, h3", {
+    opacity: 0,
+    y: -30,
+    duration: 1,
+    scrollTrigger: {
+        trigger: "h2, h3",
+        start: "top 80%",
+        toggleActions: "play none none none",
+    },
+});
