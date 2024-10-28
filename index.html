@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+
+
     <!-- Include Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -31,71 +33,8 @@
 
         /* Custom Cursor */
         body {
-            cursor: url('path/to/your/cursor.png'), auto; /* Replace with your cursor image path */
-        }
-
-        /* Navbar Link Animation */
-        .nav-link {
-            position: relative;
-            overflow: hidden;
-            transition: color 0.3s ease;
-        }
-
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background-color: #f6e58d;
-            /* muted gold */
-            transform: scaleX(0);
-            transform-origin: bottom right;
-            transition: transform 0.3s ease;
-        }
-
-        .nav-link:hover {
-            color: #f6e58d;
-        }
-
-        .nav-link:hover::after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
-
-        /* Fade-in Animation */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 1.2s ease forwards;
-        }
-
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Button Hover Animation */
-        .hover-bounce:hover {
-            transform: scale(1.08);
-        }
-
-        /* Box Styling */
-        .content-box {
-            background-color: rgba(30, 41, 59, 0.9); /* Slightly lighter than background with transparency */
-            border-radius: 0.75rem;
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-            padding: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .content-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+            cursor: url('path/to/your/cursor.png'), auto;
+            /* Replace with your cursor image path */
         }
     </style>
 </head>
@@ -103,53 +42,124 @@
 <body class="bg-gradient-to-tr from-gray-800 via-gray-900 to-black text-gray-200">
 
     <!-- Navbar -->
-    <header class="bg-opacity-70 shadow-lg bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800">
-        <nav class="container mx-auto py-4">
-            <ul class="flex justify-center space-x-8">
-                <li><a href="index.html" class="text-teal-400 hover:text-teal-500 font-semibold nav-link">Home</a></li>
-                <li><a href="about.html" class="text-teal-400 hover:text-teal-500 font-semibold nav-link">About</a></li>
-                <li><a href="contact.html" class="text-teal-400 hover:text-teal-500 font-semibold nav-link">Contact</a></li>
-                <li><a href="login.html" class="text-teal-400 hover:text-teal-500 font-semibold nav-link">Login</a></li>
+    <header class="bg-opacity-80 shadow-lg bg-gradient-to-r from-gray-900 via-teal-900 to-gray-900">
+        <nav class="container mx-auto py-4 px-6 flex items-center justify-between">
+            <!-- Logo and Title -->
+            <div class="flex items-center space-x-2">
+                <img src="vvlogo.png" alt="logo"
+                    class="h-10 w-10 mr-2 rounded-full transition-transform transform hover:scale-110">
+                <span class="text-xl md:text-2xl font-extrabold text-teal-400">Veda Verse</span>
+            </div>
+            <!-- Responsive Navigation Links -->
+            <ul class="flex space-x-4 text-base md:text-lg font-semibold">
+                <li><a href="index.html" class="nav-link">Login</a></li>
+                <li><a href="about.html" class="nav-link">Sign Up</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Content with Unified Quote and Right Section -->
-    <section class="h-screen flex items-center">
-        <div class="flex w-full h-full ">
-            
-            <!-- Quote Section -->
-            <div class="w-1/2 flex items-center justify-center p-12 fade-in">
-                <div class="max-w-md text-center">
-                    <blockquote class="text-4xl font-bold italic text-f6e58d leading-relaxed mb-6">"Success is not final, failure is not fatal: It is the courage to continue that counts."</blockquote>
-                    <p class="text-lg text-gray-300 font-medium">- Winston Churchill</p>
-                </div>
+    <!-- Main Content Section -->
+    <section class="h-screen flex flex-col md:flex-row items-center bg-gray-800 px-6">
+        <div class="w-full md:w-1/2 flex items-center justify-center p-6 md:p-12 fade-in order-2 md:order-1">
+            <div class="max-w-md text-center md:text-left">
+                <blockquote class="text-xl md:text-3xl font-bold italic text-teal-400 mb-4">
+                    "The best way to find yourself is to lose yourself in the service of others."
+                </blockquote>
+                <p class="text-lg text-gray-300 font-medium">- Mahatma Gandhi</p>
             </div>
+        </div>
 
-            <!-- Right Content in a Box -->
-            <div class="w-1/2 flex items-center justify-center p-12 fade-in">
-                <div class="content-box text-center">
-                    <h1 class="text-5xl font-bold mb-4 text-teal-300">Welcome to Veda Verse</h1>
-                    <p class="text-xl mb-6 text-gray-300">Select your role to get started</p>
-                    <div class="flex justify-center space-x-6">
-                        <a href="#" class="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-full shadow-md transition duration-300 ease-in-out hover-bounce">Teacher</a>
-                        <a href="#" class="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-full shadow-md transition duration-300 ease-in-out hover-bounce">Student</a>
-                    </div>
-                </div>
+        <div class="w-full md:w-1/2 flex items-center justify-center p-6 md:p-12 fade-in order-1 md:order-2">
+            <div class="content-box text-center p-8">
+                <img src="vvlogo.png" alt="Logo" class="mx-auto mb-4 w-24 h-24 md:w-32 md:h-32">
+                <p class="text-lg mt-4">Welcome to Veda Verse</p>
+                <p class="text-sm mt-2">Empowering students through learning and community.</p>
             </div>
-
         </div>
     </section>
+
+    <!-- Mission Section -->
+    <section class="bg-gray-900 py-12 px-6">
+        <div class="ourmission max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6 text-teal-400 underline">Our Mission</h2>
+            <p class="text-base md:text-lg text-gray-300 mb-6">
+                At Veda Verse, our mission is to empower students and professionals by creating a vibrant learning
+                community where knowledge flows freely. We aim to bridge the gap between aspiring learners and skilled
+                mentors.
+            </p>
+            <p class="text-base md:text-lg text-gray-300 mb-8">
+                With a focus on holistic learning, we are committed to building a supportive ecosystem that embraces
+                diverse interests—from coding to music. Everyone has a chance to both teach and learn, making
+                skill-building accessible for all.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+                <a href="signup.html"
+                    class="bg-teal-500 hover:bg-teal-600 text-white py-2 px-4 md:px-6 rounded shadow-md">Sign Up</a>
+                <a href="contact.html"
+                    class="bg-gray-700 hover:bg-gray-800 text-white py-2 px-4 md:px-6 rounded shadow-md">Contact</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Section -->
+    <section class="bg-gray-800 py-12 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6 text-teal-400 underline">Trending Now</h2>
+            <p class="text-base md:text-lg text-gray-300 mb-10">Stay updated with the latest trends in technology.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-teal-300 mb-2">AI and Machine Learning</h3>
+                    <p class="text-sm text-gray-300">Explore how AI is transforming industries and what skills you need
+                        to start.</p>
+                    <a href="ai.html" class="text-teal-400 font-semibold">Learn More →</a>
+                </div>
+                <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-teal-300 mb-2">Blockchain Technology</h3>
+                    <p class="text-sm text-gray-300">Dive into blockchain fundamentals, a technology shaping the future.
+                    </p>
+                    <a href="blockchain.html" class="text-teal-400 font-semibold">Learn More →</a>
+                </div>
+                <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-teal-300 mb-2">UI/UX Design Trends</h3>
+                    <p class="text-sm text-gray-300">Learn about UI/UX design trends, tools, and practices for engaging
+                        interfaces.</p>
+                    <a href="design.html" class="text-teal-400 font-semibold">Learn More →</a>
+                </div>
+                <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-teal-300 mb-2">Data Science and Analytics</h3>
+                    <p class="text-sm text-gray-300">Discover how to make data-driven decisions, analyze trends, and
+                        predict future outcomes with data science.</p>
+                    <a href="data-science.html" class="text-teal-400 font-semibold">Learn More →</a>
+                </div>
+                <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-teal-300 mb-2">Cybersecurity Essentials</h3>
+                    <p class="text-sm text-gray-300">Get insights into cybersecurity, a critical field that protects
+                        digital assets and secures personal data.</p>
+                    <a href="cybersecurity.html" class="text-teal-400 font-semibold">Learn More →</a>
+                </div>
+                <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-teal-300 mb-2">Cloud Computing</h3>
+                    <p class="text-sm text-gray-300">Understand how cloud technology powers applications and
+                        infrastructure worldwide, with scalable and flexible solutions.</p>
+                    <a href="cloud-computing.html" class="text-teal-400 font-semibold">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="helpandsupport">
+        
+    </section>
+
+
 
     <!-- Footer -->
     <footer class="bg-opacity-70 py-4 bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800">
         <p class="text-center text-gray-400 text-sm hover:text-teal-500 transition duration-200">© 2024 Veda Verse. All Rights Reserved.</p>
     </footer>
 
-    <!-- Include GSAP via CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
 </body>
 
 </html>
