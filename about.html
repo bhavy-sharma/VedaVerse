@@ -7,7 +7,10 @@
 
     <!-- Include Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-   
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <style>
         @font-face {
             font-family: 'Firesans';
@@ -66,78 +69,78 @@
     </header>
 
     <!-- History of Veda Verse Section -->
-<section class="py-16">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-10 text-white underline">History of Veda Verse</h2>
-        <p class="text-lg text-gray-400 text-center mb-6">
-            Veda Verse was founded with the vision of creating a supportive and collaborative platform for students. After working on several projects, including nEmi Notes, Byte War Coding Competition, and Edith the Virtual Assistant, our team realized the significant challenges that students face when trying to learn and showcase their skills. 
-        </p>
-        <p class="text-lg text-gray-400 text-center mb-6">
-            We noticed a lack of resources and guidance for students embarking on their own projects. This inspired us to establish Veda Verse, a platform where students could not only learn new skills but also share their expertise with others. 
-        </p>
-        <p class="text-lg text-gray-400 text-center mb-6">
-            Our goal is to create an inclusive community that fosters learning, mentoring, and collaboration, ensuring that no student feels alone in their educational journey. Through Veda Verse, we aim to bridge the gap between knowledge and application, empowering students to turn their ideas into reality.
-        </p>
-    </div>
-</section>
+    <section class="py-16" id="history-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-10 text-white underline animate-fade-up">History of Veda Verse</h2>
+            <p class="text-lg text-gray-400 text-center mb-6 animate-fade-up">
+                Veda Verse was founded with the vision of creating a supportive and collaborative platform for students. After working on several projects, including nEmi Notes, Byte War Coding Competition, and Edith the Virtual Assistant, our team realized the significant challenges that students face when trying to learn and showcase their skills. 
+            </p>
+            <p class="text-lg text-gray-400 text-center mb-6 animate-fade-up">
+                We noticed a lack of resources and guidance for students embarking on their own projects. This inspired us to establish Veda Verse, a platform where students could not only learn new skills but also share their expertise with others. 
+            </p>
+            <p class="text-lg text-gray-400 text-center mb-6 animate-fade-up">
+                Our goal is to create an inclusive community that fosters learning, mentoring, and collaboration, ensuring that no student feels alone in their educational journey. Through Veda Verse, we aim to bridge the gap between knowledge and application, empowering students to turn their ideas into reality.
+            </p>
+        </div>
+    </section>
 
     <!-- Meet Our Team Section -->
-    <section class="py-16">
+    <section class="py-16" id="team-section">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-10 text-white underline">Meet Our Team</h2>
+            <h2 class="text-3xl font-bold text-center mb-10 text-white underline animate-fade-up">Meet Our Team</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Team Member 1 -->
-                <div class="bg-gray-800 rounded-lg p-6 text-center team-member shadow-lg">
-                    <img src="img/bhavy.png" alt="Team Member 1" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <div class="bg-gray-800 rounded-lg p-6 text-center team-member shadow-lg animate-fade-up">
+                    <img src="img/bhavy.png" alt="Bhavy Sharma" class="w-32 h-32 rounded-full mx-auto mb-4">
                     <h3 class="text-xl font-semibold mb-2 text-teal-300">Bhavy Sharma</h3>
                     <p class="mb-4 text-gray-400">Lead Developer</p>
                     <a href="https://bhavy-sharma.github.io/protfolio/" class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-full">View Portfolio</a>
                 </div>
                 <!-- Team Member 2 -->
-                <div class="bg-gray-800 rounded-lg p-6 text-center team-member shadow-lg">
-                    <img src="img/chetan.png" alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <div class="bg-gray-800 rounded-lg p-6 text-center team-member shadow-lg animate-fade-up">
+                    <img src="img/chetan.png" alt="Chetan Thakur" class="w-32 h-32 rounded-full mx-auto mb-4">
                     <h3 class="text-xl font-semibold mb-2 text-teal-300">Chetan Thakur</h3>
                     <p class="mb-4 text-gray-400">UI/UX Designer</p>
                     <a href="https://github.com/bhavy-sharma/" class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-full">View Portfolio</a>
                 </div>
                 <!-- Team Member 3 -->
-                <div class="bg-gray-800 rounded-lg p-6 text-center team-member shadow-lg">
-                    <img src="https://via.placeholder.com/150" alt="Team Member 3" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <div class="bg-gray-800 rounded-lg p-6 text-center team-member shadow-lg animate-fade-up">
+                    <img src="https://via.placeholder.com/150" alt="Aastha Sharma" class="w-32 h-32 rounded-full mx-auto mb-4">
                     <h3 class="text-xl font-semibold mb-2 text-teal-300">Aastha Sharma</h3>
                     <p class="mb-4 text-gray-400">Project Manager</p>
                     <a href="#" class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-full">View Portfolio</a>
                 </div>
                 <!-- Team Member 4 -->
-                <div class="bg-gray-800 rounded-lg p-6 text-center team-member shadow-lg">
-                    <img src="img/anjali.png" alt="Team Member 4" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <div class="bg-gray-800 rounded-lg p-6 text-center team-member shadow-lg animate-fade-up">
+                    <img src="img/anjali.png" alt="Anjali Rajput" class="w-32 h-32 rounded-full mx-auto mb-4">
                     <h3 class="text-xl font-semibold mb-2 text-teal-300">Anjali Rajput</h3>
                     <p class="mb-4 text-gray-400">Backend Developer</p>
                     <a href="#" class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-full">View Portfolio</a>
                 </div>
                 <!-- Team Member 5 -->
-                <div class="bg-gray-800 rounded-lg p-6 text-center team-member shadow-lg">
-                    <img src="https://via.placeholder.com/150" alt="Team Member 5" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <div class="bg-gray-800 rounded-lg p-6 text-center team-member shadow-lg animate-fade-up">
+                    <img src="https://via.placeholder.com/150" alt="Atul Kumar Goswami" class="w-32 h-32 rounded-full mx-auto mb-4">
                     <h3 class="text-xl font-semibold mb-2 text-teal-300">Atul Kumar Goswami</h3>
                     <p class="mb-4 text-gray-400">Associate Developer</p>
                     <a href="#" class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-full">View Portfolio</a>
                 </div>
                 <!-- Team Member 6 -->
-                <div class="bg-gray-800 rounded-lg p-6 text-center team-member shadow-lg">
-                    <img src="img/kratakshi.png" alt="Team Member 6" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <div class="bg-gray-800 rounded-lg p-6 text-center team-member shadow-lg animate-fade-up">
+                    <img src="img/kratakshi.png" alt="Kratakshi Bhardwaj" class="w-32 h-32 rounded-full mx-auto mb-4">
                     <h3 class="text-xl font-semibold mb-2 text-teal-300">Kratakshi Bhardwaj</h3>
                     <p class="mb-4 text-gray-400">Researcher</p>
                     <a href="#" class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-full">View Portfolio</a>
                 </div>
                 <!-- Team Member 7 -->
-                <div class="bg-gray-800 rounded-lg p-6 text-center team-member shadow-lg">
-                    <img src="https://via.placeholder.com/150" alt="Team Member 7" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <div class="bg-gray-800 rounded-lg p-6 text-center team-member shadow-lg animate-fade-up">
+                    <img src="https://via.placeholder.com/150" alt="Ashad Ikram" class="w-32 h-32 rounded-full mx-auto mb-4">
                     <h3 class="text-xl font-semibold mb-2 text-teal-300">Ashad Ikram</h3>
-                    <p class="mb-4 text-gray-400">Marketing Specilist</p>
+                    <p class="mb-4 text-gray-400">Marketing Specialist</p>
                     <a href="#" class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-full">View Portfolio</a>
                 </div>
                 <!-- Team Member 8 -->
-                <div class="bg-gray-800 rounded-lg p-6 text-center team-member shadow-lg">
-                    <img src="img/gaurav.png" alt="Team Member 8" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <div class="bg-gray-800 rounded-lg p-6 text-center team-member shadow-lg animate-fade-up">
+                    <img src="img/gaurav.png" alt="Gaurav Pratap Singh" class="w-32 h-32 rounded-full mx-auto mb-4">
                     <h3 class="text-xl font-semibold mb-2 text-teal-300">Gaurav Pratap Singh</h3>
                     <p class="mb-4 text-gray-400">Social Media Handler</p>
                     <a href="#" class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-full">View Portfolio</a>
@@ -147,22 +150,22 @@
     </section>
 
     <!-- Our Faculties Section -->
-    <section class="py-16">
+    <section class="py-16" id="faculties-section">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-10 text-white underline">Our Faculties</h2>
+            <h2 class="text-3xl font-bold text-center mb-10 text-white underline animate-fade-up">Our Faculties</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Faculty Member 1 -->
-                <div class="bg-gray-800 rounded-lg p-6 text-center faculty-member shadow-lg">
+                <div class="bg-gray-800 rounded-lg p-6 text-center faculty-member shadow-lg animate-fade-up">
                     <h3 class="text-xl font-semibold mb-2 text-teal-300">Faculty Member 1</h3>
                     <p class="mb-4 text-gray-400">Qualification: M.Sc. in Computer Science</p>
                 </div>
                 <!-- Faculty Member 2 -->
-                <div class="bg-gray-800 rounded-lg p-6 text-center faculty-member shadow-lg">
+                <div class="bg-gray-800 rounded-lg p-6 text-center faculty-member shadow-lg animate-fade-up">
                     <h3 class="text-xl font-semibold mb-2 text-teal-300">Faculty Member 2</h3>
                     <p class="mb-4 text-gray-400">Qualification: B.Tech in Information Technology</p>
                 </div>
                 <!-- Faculty Member 3 -->
-                <div class="bg-gray-800 rounded-lg p-6 text-center faculty-member shadow-lg">
+                <div class="bg-gray-800 rounded-lg p-6 text-center faculty-member shadow-lg animate-fade-up">
                     <h3 class="text-xl font-semibold mb-2 text-teal-300">Faculty Member 3</h3>
                     <p class="mb-4 text-gray-400">Qualification: PhD in Artificial Intelligence</p>
                 </div>
@@ -171,13 +174,13 @@
     </section>
 
     <!-- We are Hiring Section -->
-    <section class="py-16">
+    <section class="py-16" id="hiring-section">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-10 text-white underline">We Are Hiring</h2>
-            <p class="text-lg text-gray-400 text-center mb-6">
+            <h2 class="text-3xl font-bold text-center mb-10 text-white underline animate-fade-up">We Are Hiring</h2>
+            <p class="text-lg text-gray-400 text-center mb-6 animate-fade-up">
                 Join us at Veda Verse and enjoy various benefits such as:
             </p>
-            <ul class="list-disc list-inside text-gray-400 mb-6">
+            <ul class="list-disc list-inside text-gray-400 mb-6 animate-fade-up">
                 <li>Flexible working hours</li>
                 <li>Collaborative and supportive environment</li>
                 <li>Opportunities for professional growth</li>
@@ -195,5 +198,45 @@
             <p>&copy; 2024 Veda Verse. All rights reserved.</p>
         </div>
     </footer>
+
+
+    <script>
+        // Register the ScrollTrigger plugin
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Fade in sections on scroll
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            gsap.fromTo(section, { autoAlpha: 0 }, {
+                autoAlpha: 1,
+                scrollTrigger: {
+                    trigger: section,
+                    start: "top 80%",
+                    end: "bottom top",
+                    toggleActions: "play none none reverse",
+                    markers: false
+                }
+            });
+
+            // Animate content within each section
+            const contentElements = section.querySelectorAll('.animate-fade-up');
+            contentElements.forEach((el, index) => {
+                gsap.fromTo(el, { y: 50, autoAlpha: 0 }, {
+                    y: 0,
+                    autoAlpha: 1,
+                    duration: 0.5,
+                    delay: index * 0.1,
+                    scrollTrigger: {
+                        trigger: el,
+                        start: "top 80%",
+                        markers: false
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
 </body>
 </html>
