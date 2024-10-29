@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <!-- Include Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body, h1, p {
+            font-family: 'Firesans', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-tr from-gray-800 via-gray-900 to-black text-gray-200">
+    <header class="bg-opacity-80 shadow-lg bg-gradient-to-r from-gray-900 via-teal-900 to-gray-900">
+        <nav class="container mx-auto py-4 px-6 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <img src="vvlogo.png" alt="logo" class="h-10 w-10 mr-2 rounded-full">
+                <span class="text-xl md:text-2xl font-extrabold text-teal-400">Veda Verse</span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="h-screen flex flex-col md:flex-row items-center bg-gray-800 px-6">
+        <!-- Left side for Quote -->
+        <div class="w-full md:w-1/2 flex items-center justify-center p-6 md:p-12">
+            <div class="max-w-md text-center md:text-left">
+                <blockquote id="quote" class="text-xl md:text-3xl font-bold italic text-teal-400 mb-4"></blockquote>
+                <p id="author" class="text-lg text-gray-300 font-medium"></p>
+            </div>
+        </div>
+
+        <!-- Right side for Signup options -->
+        <div class="w-full md:w-1/2 flex items-center justify-center p-6 md:p-12">
+            <div class="content-box bg-gray-900 text-center p-8 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold text-teal-400 mb-4">Sign Up</h2>
+                <button onclick="location.href='signup_teacher.html'" class="bg-teal-500 text-white py-2 px-6 rounded shadow-md mb-4">I am a Teacher</button>
+                <button onclick="location.href='signup_student.html'" class="bg-teal-500 text-white py-2 px-6 rounded shadow-md">I am a Student</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="helpandsupport flex">
+        <div class="w-full md:w-1/2 flex flex-col p-6 md:p-12 fade-in order-2 md:order-1">
+            <h2 class="underline inline-block decoration-teal-300 decoration-2 decoration-solid text-xl font-semibold text-teal-300 mb-5">Useful Links</h2>
+            <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl flex flex-col">
+                <a href="about.html">About Us</a>
+                <a href="about.html">Meet Our Team</a>
+                <a href="faq.html">Faq</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        
+
+        <div class="w-full md:w-1/2 flex-col p-6 md:p-12 fade-in order-2 md:order-1">
+            <h2 class="underline inline-block decoration-teal-300 decoration-2 decoration-solid text-xl font-semibold text-teal-300 mb-5">Contact Us</h2>
+            <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl flex flex-col">
+                <a href="vedaverse.work@gmail.com"><i class='bx bx-envelope bx-tada bx-flip-horizontal'></i> Mail us: vedaverse.work@gmail.com</a>
+                <a href="work.bhavy@gmail.com" class="ml-[80px]">work.bhavy@gmail.com</a>
+            
+                <div class="mt-5">
+                    <p><i class='bx bx-phone-call bx-flip-horizontal bx-tada' ></i> Bhavy Sharma: +8307233996</p>
+                    <p class="ml-5">Chetan Thakur: +9536206851</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-opacity-70 py-4 bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800">
+        <p class="text-center text-gray-400 text-sm hover:text-teal-500 transition duration-200">© 2024 Veda Verse. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Array of quotes by Indian authors
+        const quotes = [
+    { text: "Success is not a good teacher, failure makes you humble.", author: "Shah Rukh Khan" },
+    { text: "First they ignore you, then they laugh at you, then they fight you, then you win.", author: "Mahatma Gandhi" },
+    { text: "Happiness is when what you think, what you say, and what you do are in harmony.", author: "Mahatma Gandhi" },
+    { text: "The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate.", author: "Swami Vivekananda" },
+    { text: "You cannot believe in God until you believe in yourself.", author: "Swami Vivekananda" },
+    { text: "God save us from people who mean well.", author: "Vikram Seth" },
+    { text: "No people whose word for 'yesterday' is the same as their word for 'tomorrow' can be said to have a firm grip on time.", author: "Salman Rushdie" },
+    { text: "Do not wait for leaders; do it alone, person to person.", author: "Mother Teresa" },
+    { text: "In a gentle way, you can shake the world.", author: "Mahatma Gandhi" },
+    { text: "Our lives begin to end the day we become silent about things that matter.", author: "Martin Luther King Jr." },
+    { text: "Where there is love, there is life.", author: "Mahatma Gandhi" },
+    { text: "You must be the change you wish to see in the world.", author: "Mahatma Gandhi" },
+    { text: "Believe in yourself and the world will be at your feet.", author: "Swami Vivekananda" },
+    { text: "The future depends on what we do in the present.", author: "Mahatma Gandhi" },
+    { text: "Simplicity is the ultimate sophistication.", author: "Leonardo da Vinci" },
+    { text: "Your time is limited, don’t waste it living someone else’s life.", author: "Steve Jobs" },
+    { text: "The best way to find yourself is to lose yourself in the service of others.", author: "Mahatma Gandhi" },
+    { text: "You are never too old to set another goal or to dream a new dream.", author: "C.S. Lewis" },
+    { text: "Challenges are what make life interesting and overcoming them is what makes life meaningful.", author: "Joshua J. Marine" },
+    { text: "An ounce of practice is worth more than tons of preaching.", author: "Mahatma Gandhi" },
+    { text: "The greatest glory in living lies not in never falling, but in rising every time we fall.", author: "Nelson Mandela" },
+    { text: "The best way to predict the future is to create it.", author: "Peter Drucker" },
+    { text: "It is our choices that show what we truly are, far more than our abilities.", author: "J.K. Rowling" },
+    { text: "Don’t judge each day by the harvest you reap but by the seeds that you plant.", author: "Robert Louis Stevenson" },
+    { text: "Be the change you are trying to create.", author: "Arun Gandhi" },
+    { text: "Strive not to be a success, but rather to be of value.", author: "Albert Einstein" }
+];
+
+
+        // Pick a random quote
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        document.getElementById("quote").innerText = `"${randomQuote.text}"`;
+        document.getElementById("author").innerText = `- ${randomQuote.author}`;
+    </script>
+</body>
+</html>
