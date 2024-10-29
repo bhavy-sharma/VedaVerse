@@ -76,11 +76,13 @@ gsap.from(".team-member", {
     },
 });
 
+
+
 // Project card animation
 gsap.from(".project-card", {
     opacity: 0,
     scale: 0.9,
-    duration: 1,
+    duration: 0.2,
     stagger: 0.3,
     scrollTrigger: {
         trigger: ".project-card",
@@ -93,10 +95,17 @@ gsap.from(".project-card", {
 gsap.from("h2, h3", {
     opacity: 0,
     y: -30,
-    duration: 1,
+    duration: 0.5,
+    stagger:0.4,
     scrollTrigger: {
         trigger: "h2, h3",
         start: "top 80%",
         toggleActions: "play none none none",
     },
 });
+
+
+
+
+ 
+

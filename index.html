@@ -31,10 +31,10 @@
         }
 
         /* Custom Cursor */
-        body {
-            cursor: url('path/to/your/cursor.png'), auto;
-            /* Replace with your cursor image path */
-        }
+        /* body {
+            cursor: url('path/to/your/cursor.png'), auto; */
+            /* Replace with your cursor image path
+        } */
     </style>
 </head>
 
@@ -69,8 +69,8 @@
         </div>
 
         <div class="w-full md:w-1/2 flex items-center justify-center p-6 md:p-12 fade-in order-1 md:order-2">
-            <div class="content-box text-center p-8">
-                <img src="vvlogo.png" alt="Logo" class="mx-auto mb-4 w-24 h-24 md:w-32 md:h-32">
+            <div class="content-box text-center p-8 ">
+                <img src="vvlogo.png" alt="Logo" class="mx-auto mb-4 md:w-32 md:h-32">
                 <p class="text-lg mt-4">Welcome to Veda Verse</p>
                 <p class="text-sm mt-2">Empowering students through learning and community.</p>
             </div>
@@ -79,7 +79,7 @@
 
     <!-- Mission Section -->
     <section class="bg-gray-900 py-12 px-6">
-        <div class="ourmission max-w-3xl mx-auto text-center">
+        <div class=" max-w-3xl mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6 text-teal-400 underline">Our Mission</h2>
             <p class="text-base md:text-lg text-gray-300 mb-6">
                 At Veda Verse, our mission is to empower students and professionals by creating a vibrant learning
@@ -93,51 +93,50 @@
             </p>
             <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
                 <a href="signup.html"
-                    class="bg-teal-500 hover:bg-teal-600 text-white py-2 px-4 md:px-6 rounded shadow-md">Sign Up</a>
-                <a href="contact.html"
-                    class="bg-gray-700 hover:bg-gray-800 text-white py-2 px-4 md:px-6 rounded shadow-md">Contact</a>
+                class="bg-teal-500 hover:bg-teal-300 text-white py-2 px-4 md:px-6 rounded shadow-md 
+                hover:shadow-xl hover:shadow-teal-500/50 transition duration-700 ease-in-out">Sign Up</a>
             </div>
         </div>
     </section>
 
     <!-- Trending Section -->
     <section class="bg-gray-800 py-12 px-6">
-        <div class="max-w-5xl mx-auto text-center">
+        <div class=" max-w-4xl mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6 text-teal-400 underline">Trending Now</h2>
             <p class="text-base md:text-lg text-gray-300 mb-10">Stay updated with the latest trends in technology.</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl">
-                    <h3 class="text-xl font-semibold text-teal-300 mb-2">AI and Machine Learning</h3>
+                <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl project-card">
+                    <h3 class="text-xl font-semibold text-teal-300 mb-2 project-card">AI and Machine Learning</h3>
                     <p class="text-sm text-gray-300">Explore how AI is transforming industries and what skills you need
                         to start.</p>
                     <a href="ai.html" class="text-teal-400 font-semibold">Learn More →</a>
                 </div>
-                <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl">
-                    <h3 class="text-xl font-semibold text-teal-300 mb-2">Blockchain Technology</h3>
+                <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl project-card">
+                    <h3 class="text-xl font-semibold text-teal-300 mb-2 project-card">Blockchain Technology</h3>
                     <p class="text-sm text-gray-300">Dive into blockchain fundamentals, a technology shaping the future.
                     </p>
                     <a href="blockchain.html" class="text-teal-400 font-semibold">Learn More →</a>
                 </div>
-                <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl">
-                    <h3 class="text-xl font-semibold text-teal-300 mb-2">UI/UX Design Trends</h3>
+                <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl project-card">
+                    <h3 class="text-xl font-semibold text-teal-300 mb-2 project-card">UI/UX Design Trends</h3>
                     <p class="text-sm text-gray-300">Learn about UI/UX design trends, tools, and practices for engaging
                         interfaces.</p>
                     <a href="design.html" class="text-teal-400 font-semibold">Learn More →</a>
                 </div>
-                <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl">
-                    <h3 class="text-xl font-semibold text-teal-300 mb-2">Data Science and Analytics</h3>
+                <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl project-card">
+                    <h3 class="text-xl font-semibold text-teal-300 mb-2 project-card">Data Science and Analytics</h3>
                     <p class="text-sm text-gray-300">Discover how to make data-driven decisions, analyze trends, and
                         predict future outcomes with data science.</p>
                     <a href="data-science.html" class="text-teal-400 font-semibold">Learn More →</a>
                 </div>
-                <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl">
-                    <h3 class="text-xl font-semibold text-teal-300 mb-2">Cybersecurity Essentials</h3>
+                <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl project-card">
+                    <h3 class="text-xl font-semibold text-teal-300 mb-2 project-card">Cybersecurity Essentials</h3>
                     <p class="text-sm text-gray-300">Get insights into cybersecurity, a critical field that protects
                         digital assets and secures personal data.</p>
                     <a href="cybersecurity.html" class="text-teal-400 font-semibold">Learn More →</a>
                 </div>
-                <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl">
-                    <h3 class="text-xl font-semibold text-teal-300 mb-2">Cloud Computing</h3>
+                <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl project-card">
+                    <h3 class="text-xl font-semibold text-teal-300 mb-2 project-card">Cloud Computing</h3>
                     <p class="text-sm text-gray-300">Understand how cloud technology powers applications and
                         infrastructure worldwide, with scalable and flexible solutions.</p>
                     <a href="cloud-computing.html" class="text-teal-400 font-semibold">Learn More →</a>
@@ -151,7 +150,7 @@
     <section class="helpandsupport flex flex-col md:flex-row">
         <div class="w-full md:w-1/2 flex flex-col p-6 md:p-12 fade-in order-2 md:order-1">
             <h2 class="underline inline-block decoration-teal-300 decoration-2 decoration-solid text-xl font-semibold text-teal-300 mb-5">Useful Links</h2>
-            <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl flex flex-col">
+            <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl flex flex-col project-card">
                 <a href="about.html" class="mb-2">About Us</a>
                 <a href="about.html" class="mb-2">Meet Our Team</a>
                 <a href="faq.html" class="mb-2">Faq</a>
@@ -161,7 +160,7 @@
     
         <div class="w-full md:w-1/2 flex flex-col p-6 md:p-12 fade-in order-1 md:order-2">
             <h2 class="underline inline-block decoration-teal-300 decoration-2 decoration-solid text-xl font-semibold text-teal-300 mb-5">Contact Us</h2>
-            <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl flex flex-col">
+            <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl flex flex-col project-card">
                 <a href="mailto:vedaverse.work@gmail.com" class="mb-2"><i class='bx bx-envelope bx-tada bx-flip-horizontal'></i> Mail us: vedaverse.work@gmail.com</a>
                 <a href="mailto:work.bhavy@gmail.com" class="ml-[80px] mb-2">work.bhavy@gmail.com</a>
             
@@ -181,6 +180,10 @@
         <p class="text-center text-gray-400 text-sm hover:text-teal-500 transition duration-200">© 2024 Veda Verse. All Rights Reserved.</p>
     </footer>
 
-</body>
 
+     <!-- GSAP Animations -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+     <script src="script.js"></script>
+</body>
 </html>

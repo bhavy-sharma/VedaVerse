@@ -6,6 +6,7 @@
     <title>Signup Page</title>
     <!-- Include Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
         body, h1, p {
             font-family: 'Firesans', sans-serif;
@@ -42,39 +43,41 @@
         </div>
     </section>
 
-    <section class="helpandsupport flex">
+    <section class="helpandsupport flex flex-col md:flex-row">
         <div class="w-full md:w-1/2 flex flex-col p-6 md:p-12 fade-in order-2 md:order-1">
             <h2 class="underline inline-block decoration-teal-300 decoration-2 decoration-solid text-xl font-semibold text-teal-300 mb-5">Useful Links</h2>
             <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl flex flex-col">
-                <a href="about.html">About Us</a>
-                <a href="about.html">Meet Our Team</a>
-                <a href="faq.html">Faq</a>
-                <a href="contact.html">Contact Us</a>
+                <a href="about.html" class="mb-2">About Us</a>
+                <a href="about.html" class="mb-2">Meet Our Team</a>
+                <a href="faq.html" class="mb-2">Faq</a>
+                <a href="contact.html" class="mb-2">Contact Us</a>
             </div>
         </div>
-        
-
-        <div class="w-full md:w-1/2 flex-col p-6 md:p-12 fade-in order-2 md:order-1">
+    
+        <div class="w-full md:w-1/2 flex flex-col p-6 md:p-12 fade-in order-1 md:order-2">
             <h2 class="underline inline-block decoration-teal-300 decoration-2 decoration-solid text-xl font-semibold text-teal-300 mb-5">Contact Us</h2>
             <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl flex flex-col">
-                <a href="vedaverse.work@gmail.com"><i class='bx bx-envelope bx-tada bx-flip-horizontal'></i> Mail us: vedaverse.work@gmail.com</a>
-                <a href="work.bhavy@gmail.com" class="ml-[80px]">work.bhavy@gmail.com</a>
+                <a href="mailto:vedaverse.work@gmail.com" class="mb-2"><i class='bx bx-envelope bx-tada bx-flip-horizontal'></i> Mail us: vedaverse.work@gmail.com</a>
+                <a href="mailto:work.bhavy@gmail.com" class="ml-[80px] mb-2">work.bhavy@gmail.com</a>
             
                 <div class="mt-5">
-                    <p><i class='bx bx-phone-call bx-flip-horizontal bx-tada' ></i> Bhavy Sharma: +8307233996</p>
+                    <p><i class='bx bx-phone-call bx-flip-horizontal bx-tada'></i> Bhavy Sharma: +8307233996</p>
                     <p class="ml-5">Chetan Thakur: +9536206851</p>
-                    
                 </div>
             </div>
         </div>
     </section>
 
 
-
     <!-- Footer -->
     <footer class="bg-opacity-70 py-4 bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800">
         <p class="text-center text-gray-400 text-sm hover:text-teal-500 transition duration-200">© 2024 Veda Verse. All Rights Reserved.</p>
     </footer>
+
+     <!-- GSAP Animations -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+     <script src="script.js"></script>
 
     <script>
         // Array of quotes by Indian authors
