@@ -46,7 +46,7 @@
             </div>
             <!-- Responsive Navigation Links -->
             <ul class="flex space-x-4 text-base md:text-lg font-semibold">
-                <li><a href="index.html" class="nav-link">Login</a></li>
+                <li><a href="login.html" class="nav-link">Login</a></li>
                 <li><a href="signup.html" class="nav-link">Sign Up</a></li>
                 <li><a href="about.html" class="nav-link">About Us</a></li>
             </ul>
@@ -92,7 +92,7 @@
             </p>
             <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
                 <a href="signup.html" class="bg-teal-500 hover:bg-teal-300 text-white py-2 px-4 md:px-6 rounded shadow-md 
-                hover:shadow-xl hover:shadow-teal-500/50 transition duration-700 ease-in-out animate-fade-up">Sign Up</a>
+                hover:shadow-xl hover:shadow-teal-500/50 transition duration-700 ease-in-out animate-fade-up">Enrol Now</a>
             </div>
         </div>
     </section>
@@ -149,14 +149,15 @@
             <h2 class="text-3xl font-bold mb-6 text-teal-400 underline animate-fade-up">Contact Us</h2>
             <p class="text-lg text-gray-300 mb-6 animate-fade-up">We'd love to hear from you! Reach out with any questions or
                 feedback.</p>
-            <form action="#" method="post" class="flex flex-col space-y-4">
-                <input type="text" name="name" placeholder="Your Name" class="border rounded-lg p-2 bg-gray-800 border-gray-700">
-                <input type="email" name="email" placeholder="Your Email" class="border rounded-lg p-2 bg-gray-800 border-gray-700">
-                <textarea name="message" rows="4" placeholder="Your Message" class="border rounded-lg p-2 bg-gray-800 border-gray-700"></textarea>
+            <form action="" method="POST" class="flex flex-col space-y-4" name="Contact-form">
+                <input type="text" name="Name" placeholder="Your Name" class="border rounded-lg p-2 bg-gray-800 border-gray-700" required>
+                <input type="email" name="Email" placeholder="Your Email" class="border rounded-lg p-2 bg-gray-800 border-gray-700" required>
+                <textarea name="Message" rows="4" placeholder="Your Message" class="border rounded-lg p-2 bg-gray-800 border-gray-700" required></textarea>
                 <button type="submit" class="bg-teal-500 hover:bg-teal-400 text-white py-2 rounded-lg">Send Message</button>
             </form>
         </div>
     </section>
+    
 
       <!-- Help anf Support -->
       <section class="helpandsupport flex flex-col md:flex-row">
@@ -165,10 +166,11 @@
                 class="underline inline-block decoration-teal-300 decoration-2 decoration-solid text-xl font-semibold text-teal-300 mb-5">
                 Useful Links</h2>
             <div class="bg-gray-900 rounded-lg shadow-lg p-4 hover:shadow-xl flex flex-col project-card">
+                <a href="index.html" class="mb-2">Home</a>
                 <a href="about.html" class="mb-2">About Us</a>
-                <a href="about.html#OurTeam" id="OurTeam" class="mb-2">Meet Our Team</a>
+                <a href="about.html#team-section" class="mb-2">Meet Our Team</a>
                 <a href="faq.html" class="mb-2">Faq</a>
-                <a href="contact.html" class="mb-2">Contact Us</a>
+                <a href="index.html#contact-section" class="mb-2">Contact Us</a>
             </div>
         </div>
 
@@ -237,6 +239,7 @@
             });
         });
     </script>
+    <script src="js/contact-form.js"></script>
 </body>
 
 </html>
